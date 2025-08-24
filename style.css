@@ -1,0 +1,111 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f3f8f4; /* Soft white with hint of green */
+    color: #114e2d; /* Dark green text */
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b3d1b;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #a5d6a7;
+}
+
+/* Container with Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #006600; /* Green border for Pakistani feel */
+    box-shadow: 0 6px 14px rgba(0, 102, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 102, 0, 0.3);
+}
+
+/* Card Image */
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0b3d1b; /* Dark green border */
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.card h1 {
+    font-size: 1.3rem;
+    color: #064d2f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+#shortpara {
+    font-size: 0.95rem;
+    color: #114e2d;
+    line-height: 1.6;
+}
+
+/* Extra Paragraph Hidden */
+#extrapara, #extra, #extraPara, #Extra {
+    display: none;
+}
+
+/* Read More Link */
+a {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #006600;
+    font-weight: bold;
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #006600;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #006600;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    .card h1 {
+        font-size: 1.1rem;
+    }
+}
